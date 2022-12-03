@@ -3,7 +3,8 @@ const listaSpesa = ['Pane', 'Latte','Uova','Panettone','Pandoro','Torrone','Vino
 // mi collego all'elemto html 
 const contSpesa = document.getElementById('lista');
 
-for (i=0; i<listaSpesa.length; i++){
+let i = 0;
+while ( i<listaSpesa.length){
     // creo variabile contatore dei vari item della spesa 
     let item = listaSpesa[i];
     // creo gli li 
@@ -12,4 +13,6 @@ for (i=0; i<listaSpesa.length; i++){
     listItem.innerHTML = `${item}`
     // inserisco gli li nell'html 
     contSpesa.append(listItem)
+    // aumento valore di i di 1 e faccio ripartire una nuova iterzazione 
+    i++
 }
