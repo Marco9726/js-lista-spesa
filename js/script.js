@@ -10,6 +10,7 @@ for (i=0; i<listaSpesa.length; i++){
     let item = listaSpesa[i];
     console.log(item);
     // creo nella variabile degli li gli li stessi con struttura html e inserisco al loro interno la variabile item 
-    element += `<li class="list-item">${item}</li>`
+    element += `<li class="list-item">${item}</li>`;
+    // inserisco l'elemento nell'html 
     contSpesa.innerHTML =element;
 }
