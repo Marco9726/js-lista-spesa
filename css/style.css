@@ -6,4 +6,26 @@
 
 ul{
     list-style-type: none;
+    margin: 2rem;
+}
+
+ul li{
+    line-height: 3rem;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-container{
+    width: 35%;
+    height: 75vh;
+    margin: 50px auto;
+    position: relative;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+    position: absolute;   
 }
